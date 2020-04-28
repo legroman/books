@@ -55,6 +55,20 @@ header{
     display: block;
 }
 
+#basic-navbar-nav .nav-link{
+    font-family: var(--Snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+#basic-navbar-nav .nav-link:hover{
+    color: black;
+}
+
+#brand{
+    color: white;
+}
+
 .dropdown-content a:hover{
     background: #ddd;
 }
@@ -191,7 +205,7 @@ header .container .col-md-7 button{
     padding-top: 3.5vmin;
     margin: 1rem;
     border-radius: .5em;
-    box-shadow: 1px 2px 50px 0 rgba(255, 0, 0.349);
+    box-shadow: 1px 2px 50px 0 rgba(255, 0, 0, 0.349);
 }
 
 .numbers{
@@ -343,4 +357,85 @@ footer .input-group .input-group-text{
 footer .column i{
     color: #dd2476;
     margin-right: 1em;
+}
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+
+    header .container .col-md-5{
+        margin-left: 9vmin;
+    }
+
+    header .container .col-md-7{
+        padding-top: 10vmin;
+        padding-bottom: 14vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-2 .cover{
+        background-position: -25vmin -10vmin;
+    }
+
+    .numbers .rect{
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .numbers .rect h1{
+        font-size: 2rem;
+    }
+
+    .section-4{
+        height: inherit;
+        padding: 10vmin!important;
+    }
+
+    .section-4 .row h1{
+        padding: 6vmin 4vmin;
+    }
+
+    .section-4 .row .col-md-6{
+        text-align: center!important;
+    }
+
+    .section-4 .desktop i{
+        font-size: 2vmin;
+    }
+
+    .section-5 .team{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section-5 .carousel-inner{
+        width: 24rem!important;
+        margin-left: -3rem!important;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+}
+
+/*Sticky Class*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
 }

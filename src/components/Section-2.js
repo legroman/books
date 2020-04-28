@@ -1,6 +1,23 @@
 import React from "react";
+import $ from "jquery";
 
 export default function Section2() {
+    let nCount = function (selector) {
+        $(selector).each(function () {
+            $(this).animate({Counter: $(this).text()},{duration: 4000, easing: "swing", step: function (value) {
+                    $(this).text(Math.ceil(value))
+                }})
+        })
+    };
+    let a = 0;
+    $(window).scroll(function () {
+        let oTop = $(".numbers").offset().top-window.innerHeight;
+        if (a === 0 && $(window).scrollTop() >= oTop){
+            a++;
+            nCount(".rect>h1")
+        }
+    });
+
     return(
         <section className="section-2 container-fluid p-0">
             <div className="cover">

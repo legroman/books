@@ -37,6 +37,7 @@ header a{
 header{
     background: #dd2476;
     background: var(--bggradient);
+    height: 100vh;
 }
 
 .dropdown-content{
@@ -57,7 +58,7 @@ header{
 
 #basic-navbar-nav .nav-link{
     font-family: var(--Snigle-font);
-    font-size: 0.9em;
+    font-size: 1em;
     color: whitesmoke;
 }
 
@@ -94,7 +95,7 @@ header .nav-link:hover{
 }
 
 header .row .col-md-5{
-    padding: 4.2vmin 1vmin;
+    padding: 10.2vmin 1vmin;
 }
 
 header .row .col-md-7{

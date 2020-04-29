@@ -33,10 +33,10 @@ export default function Footer() {
                         <h4 className="text-light">Follow Us</h4>
                         <p className="text-muted">Let us be social</p>
                         <div className="column">
-                            <i><FontAwesomeIcon icon={faFacebookF}/></i>
-                            <i><FontAwesomeIcon icon={faInstagram}/></i>
-                            <i><FontAwesomeIcon icon={faTwitter}/></i>
-                            <i><FontAwesomeIcon icon={faYoutube}/></i>
+                            <i><FontAwesomeIcon icon={faFacebookF} size="lg"/></i>
+                            <i><FontAwesomeIcon icon={faInstagram} size="lg"/></i>
+                            <i><FontAwesomeIcon icon={faTwitter} size="lg"/></i>
+                            <i><FontAwesomeIcon icon={faYoutube} size="lg"/></i>
                         </div>
                     </div>
                 </div>
